@@ -4,62 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
     <title>Vista Verde</title>
 </head>
 
-<body>
-    <header class="header">
-        <img src="/assets/logo-vista-verde.png" alt="logo da empresa vista verde">
-        <nav class="nav-bar">
-            <a href="/index.html">Home</a>
-            <a href="/pages/sobre-nos.html">Sobre Nós</a>
-            <a href="/pages/produtos.html">Produtos</a>
+<body class="font-sans">
+    <header class="px-4 py-8 pb-0 flex flex-col justify-between items-center bg-green-950">
+        <img src="/assets/logo-vista-verde.png" alt="logo da empresa vista verde" class="h-32">
+        <nav class=" flex justify-center py-4 gap-x-8">
+            <a class="text-[#c5e8bc] font-bold text-xl hover:brightness-50" href="/index.html">Home</a>
+            <a class="text-[#c5e8bc] font-bold text-xl hover:brightness-50" href="/pages/sobre-nos.html">Sobre Nós</a>
+            <a class="text-[#c5e8bc] font-bold text-xl hover:brightness-50" href="/pages/produtos.html">Produtos</a>
         </nav>
     </header>
-    <main class="main">
-
-        <section class="main-banner">
-            <div class="banner-content">
-                <h1>Beleza Natural em Seu Espaço</h1>
-                <a href="/pages/sobre-nos.html" class="button">Descubra Mais</a>
+    <main class="flex flex-col items-center">
+        <section style="background-image: url('/assets/banner.jpg')" class="flex flex-col items-center py-40 w-full bg-cover bg-center">
+            <div class="flex flex-col items-center">
+                <h1 class="text-white text-center text-5xl font-bold pb-8 w-[80%] backdrop-blur-[1px]">Beleza Natural em Seu Espaço</h1>
+                <a href="/pages/sobre-nos.html" class="bg-green-700 text-[#c5e8bc] font-bold text-xl py-3 px-4 rounded-3xl hover:bg-green-950">Descubra Mais</a>
             </div>
         </section>
 
-        <section class="section">
+        <section class="mx-8 my-12 p-9 flex flex-col items-center gap-x-8">
             <img src="/assets/vista-verde.jpg" alt="Loja da Vista Verde Plantas Ornamentais.">
-            <div class="titulo">
-                <h2>Quem somos</h2>
+            <div class="flex flex-col items-center">
+                <h2 class="text-green-700 text-3xl pb-4 w-[80%] text-center font-semibold" >Quem somos</h2>
                 <p>A Vista Verde é especialista em trazer vida aos ambientes através de plantas
                     ornamentais selecionadas. Com mais de 20 anos de experiência, oferecemos soluções
                     verdes personalizadas para lares e escritórios. Conecte-se com a natureza onde você
                     estiver.</p>
-            </title>
-            
         </section>
 
-        <section class="section-produtos">
+        <section class="mx-8 my-12 p-9 flex flex-col items-center gap-x-8">
             <h2>Produtos</h2>
             <section class="produtos">
                 <article class="produto">
                     <img src="/assets/ficus-capa.jpg" alt="Ficus Lyrata">
                     <h3>Ficus Lyrata</h3>
-                    <a href="/pages/produtos/produto1.html" class="button">Saiba Mais</a>
+                    <a href="/pages/produtos/produto1.html" class="bg-green-700 text-[#c5e8bc] font-bold text-xl py-3 px-4 rounded-3xl hover:bg-green-950">Saiba Mais</a>
                 </article>
 
                 <article class="produto">
                     <img src="/assets/areca-capa.jpg" alt="Areca Palmeira">
                     <h3>Areca Palmeira</h3>
-                    <a href="/pages/produtos/produto2.html" class="button">Saiba Mais</a>
+                    <a href="/pages/produtos/produto2.html" class="bg-green-700 text-[#c5e8bc] font-bold text-xl py-3 px-4 rounded-3xl hover:bg-green-950">Saiba Mais</a>
                 </article>
             </section>
-            <a href="/pages/produtos.html" class="button" id="wide-button">Conheça</a>
+            <a href="/pages/produtos.html" class="bg-green-700 text-[#c5e8bc] font-bold text-xl py-3 px-4 rounded-3xl hover:bg-green-950">Conheça</a>
+            padding: 0.75rem 25vw;
+        background-color: var(--dark-green);
+        color: var(--light-green);
+    
+    
+        background-color: var(--light-green);
+        color: var(--dark-green);
         </section>
 
     </main>
     <footer class="footer">
         <span class="footer-text">Vista Verde - 2024 - Todos os direitos reservados</span>
     </footer>
+    <div class="container mx-auto flex justify-center flex-col items-center">
+        <h1 class="text-4xl font-bold text-center text-blue-600">Olá, Tailwind CSS!</h1>
+        <p class="text-lg text-center text-gray-700">Este é um exemplo de um site usando Tailwind CSS.</p>
+        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Clique Aqui</button>
+    </div>
 </body>
 
 </html>

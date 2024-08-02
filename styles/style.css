@@ -15,24 +15,10 @@
 
 }
 
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.header {
-    max-width: 100vw;
-    padding: 1rem 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--dark-green);
 }
 
 .nav-bar a,
